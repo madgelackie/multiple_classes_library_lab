@@ -20,6 +20,9 @@ public class Library {
     }
 
     public Book removeBook() {
-        return this.books.remove(0);
+        if (this.books.size() >= 1) {
+            return this.books.remove(0);
+        }
+        return
     }
 }

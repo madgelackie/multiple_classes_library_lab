@@ -29,7 +29,9 @@ public class BorrowerTest {
         library.addBook(book2);
         library.removeBook();
         borrower1.borrow(library);
-        assertEquals(1, borrower1.booksInBag());
+        borrower1.borrow(library);
+        borrower1.borrow(library);
+        assertEquals(3, borrower1.booksInBag());
     }
 
 }

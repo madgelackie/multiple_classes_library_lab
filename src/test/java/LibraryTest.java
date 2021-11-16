@@ -40,4 +40,15 @@ public class LibraryTest {
         library.removeBook();
         assertEquals(1, library.bookCount());
     }
+
+//    @Test
+//    public void onlyRemoveIfEnoughBooks(){
+//        library.addBook(book1);
+//        library.addBook(book2);
+//        library.removeBook();
+//        library.removeBook();
+//        library.removeBook();
+//        assertEquals(0, library.bookCount());
+//    }
+
 }
